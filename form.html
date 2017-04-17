@@ -1,36 +1,10 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8"/>
+<title>Form Demo for Leticia</title>
+</head>
 
-<script>
-function verifycontents(){
-  var first_name=document.getElementByName('first_name');
-  var last_name=document.getElementByName('last_name');
-  var email=document.getElementByName('email');
-  var telephone=document.getElementByName('telephone');
-  var comments=document.getElementByName('comments');
-  if(first_name.value.length<2){
-    alert("Please input a valid first name");
-    return false;
-  }
-  if(last_name.value.length<2){
-    alert("Please input a valid last name");
-    return false;
-  }
-  if(email.value.length<2){
-    alert("Please input a valid email");
-    return false;
-  }
-  if(telephone.value.length<2){
-    alert("Please input a valid phone number");
-    return false;
-  }
-  if(comments.value.length<2){
-    alert("Please input a valid comment");
-    return false;
-  }
-
-  //if no problems were detected, return true(which is a green light for "onsubmit").
-  return true;
-}
-</script>
+<body>
 
 <form name="contactform" method="post" action="submitphp.php" onsubmit="verifycontents()">
 <table width="450px">
@@ -92,3 +66,40 @@ function verifycontents(){
 </tr>
 </table>
 </form>
+
+
+
+<script>
+function verifycontents(){
+  var first_name=document.getElementByName('first_name');
+  var last_name=document.getElementByName('last_name');
+  var email=document.getElementByName('email');
+  var telephone=document.getElementByName('telephone');
+  var comments=document.getElementByName('comments');
+  if(first_name.value.length<2){
+    alert("Please input a valid first name");
+    return false;
+  }
+  if(last_name.value.length<2){
+    alert("Please input a valid last name");
+    return false;
+  }
+  if(email.value.length<2){
+    alert("Please input a valid email");
+    return false;
+  }
+  if(telephone.value.length<2){
+    alert("Please input a valid phone number");
+    return false;
+  }
+  if(comments.value.length<2){
+    alert("Please input a valid comment");
+    return false;
+  }
+
+  //if no problems were detected, return true(which is a green light for "onsubmit").
+  return true;
+}
+</script>
+
+</body>
