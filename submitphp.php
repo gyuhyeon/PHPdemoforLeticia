@@ -73,7 +73,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
-    if(strlen($override_dest)){
+    if(strlen($override_dest)>2){
       $email_to = $override_dest;
     }
     $email_to .= "Comments: ".clean_string($comments)."\n";
