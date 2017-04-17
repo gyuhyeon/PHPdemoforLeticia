@@ -85,7 +85,6 @@ if(isset($_POST['email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
-    $email_to .= "Comments: ".clean_string($comments)."\n";
  
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
