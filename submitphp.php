@@ -24,6 +24,7 @@ if(isset($_POST['email'])) {
     
     // This is for when the submission went wrong. You could just leave it as it is, or modify it, or just not provide any error displays. The problem with having no error displayed is of course, the user won't know if he/she fucked it up.
     // One another elegant way to do this would be to keep the user from making an invalid request in the first place by putting a javascript conditional function at form.html, instead of checking validity in php(server).
+    // I put in some sample of how validity could be checked from html/javascript at form.html. Take a look at function verifycontents().
     function died($error) {
         // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
