@@ -31,13 +31,18 @@ if(isset($_POST['email'])) {
     $email_from = $_POST['email']; // required
     $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
+
     $override_dest = $_POST['override_dest']; // this is for explicit dest. email override. 
+    if(strlen($override_dest)>2){
+      $email_to = clean_string($override_dest);
+    }
  
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
   if(!preg_match($email_exp,$email_from)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= $email_to;
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/";
@@ -73,9 +78,6 @@ if(isset($_POST['email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
-    if(strlen($override_dest)>2){
-      $email_to = clean_string($override_dest);
-    }
     $email_to .= "Comments: ".clean_string($comments)."\n";
  
 // create email headers
