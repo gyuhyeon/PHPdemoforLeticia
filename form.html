@@ -71,11 +71,11 @@
 
 <script>
 function verifycontents(){
-  var first_name=document.getElementByName('first_name');
-  var last_name=document.getElementByName('last_name');
-  var email=document.getElementByName('email');
-  var telephone=document.getElementByName('telephone');
-  var comments=document.getElementByName('comments');
+  var first_name=document.getElementsByName('first_name')[0];
+  var last_name=document.getElementsByName('last_name')[0];
+  var email=document.getElementsByName('email')[0];
+  var telephone=document.getElementsByName('telephone')[0];
+  var comments=document.getElementsByName('comments')[0];
   if(first_name.value.length<2){
     alert("Please input a valid first name");
     return false;
