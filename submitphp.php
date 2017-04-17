@@ -131,7 +131,7 @@ if(isset($_POST['email'])) {
 <!-- include your own success html here -->
  
 Thank you for contacting us. We will be in touch with you very soon :3<br>
-<img src = http://imgur.com/a/2qngl.gif />
+<img src = "http://imgur.com/a/2qngl.gif" />
 
 
 
