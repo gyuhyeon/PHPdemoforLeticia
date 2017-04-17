@@ -42,7 +42,8 @@ if(isset($_POST['email'])) {
     $telephone = $_POST['telephone']; // not required
     $comments = $_POST['comments']; // required
 
-    $override_dest = $_POST['override_dest']; // this is for explicit dest. email override. 
+    // this is for explicit dest. email override. If you don't need it and just use hardcoded string on the top of this code, this can be deleted.
+    $override_dest = $_POST['override_dest']; 
     if(strlen($override_dest)>2){
       $email_to = clean_string($override_dest);
     }
@@ -52,7 +53,6 @@ if(isset($_POST['email'])) {
  
   if(!preg_match($email_exp,$email_from)) {
     $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
-    $error_message .= $email_to;
   }
  
     $string_exp = "/^[A-Za-z .'-]+$/";
