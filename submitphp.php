@@ -1,4 +1,14 @@
 <?php
+
+//necessary functions
+
+//cleans string because _POST ones can be dirty with bunch of unnecessary information
+function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+
+
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
@@ -66,10 +76,7 @@ if(isset($_POST['email'])) {
     $email_message = "Form details below.\n\n";
  
      
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
+    
  
      
  
