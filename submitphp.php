@@ -74,7 +74,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Telephone: ".clean_string($telephone)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
     if(strlen($override_dest)>2){
-      $email_to = $override_dest;
+      $email_to = clean_string($override_dest);
     }
     $email_to .= "Comments: ".clean_string($comments)."\n";
  
