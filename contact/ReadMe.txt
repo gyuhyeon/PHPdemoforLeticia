@@ -1,21 +1,3 @@
-___Contact Form code from html-form-guide.com___
-See the article here: 
-http://www.html-form-guide.com/contact-form/simple-php-contact-form.html
-
-
-Installing the form____
-1. Edit the file contactform.php and update your email address.
-
-2. Upload the entire folder to your web site. 
-
-3. Link to contactform.php or embed using iframe.
-see: http://www.html-form-guide.com/contact-form/embed-contact-form.html
-
-You can customize almost every aspect of this form.
-
-Visit html-form-guide.com for more info.
-
-
-License____
-This program is free software published under the terms of the GNU Lesser General Public License.
-You can freely use it on commercial or non-commercial websites. 
+contactform.html is the form which is opened through iframe.
+contactform.html throws a POST request towards contactform.php, which deals with the request and tosses back a result thank-you page.
+Base code in public domain, modified with love, for Leticia by Gyuhyeon Lee.
