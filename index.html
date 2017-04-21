@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+    <title>Rafael Pereira | Psicologia &amp; eSport</title>
+</head>
+<body class="b">
+
+    <!-- Nav Bar -->
+    <div class="nav">
+        <ul>
+            <li id="sobre"><a target="_blank" href="https://www.rafaelpereira.work/">sobre</a></li>
+            <li><a href="#contato">contato</a></li>
+            <li><a href="#solucoes">soluções</a></li>
+            <li><a href="#quem">para quem?</a></li>
+        </ul>
+    </div>
+    
+    <!-- Header -->
+    <div class="topimage pos">
+        <h1>Você busca melhorar <br />
+        seu desempenho?</h1>
+        <a href="#quem">&#xf13a;</a>
+    </div>
+
+    <!-- Perfis -->
+
+    <article class="container tam b" id="quem">
+        <section class="row">
+            <div class="col-md-12" id="perfis">
+                <h2>Atendimentos especiais para</h2>
+            </div>
+        </section>
+
+        <section class="row">
+            <div class="col-md-4">
+                <div class="round jogador"> 
+                    <p class="icon">&#xf11b;</p>
+                </div>
+
+                <div>
+                    <h3 class="perfil" id="jogador"><a href="#solucoes" id="jogador" onclick="butJogador">Jogador</a></h3>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="round organizacao">
+                    <p class="icon">&#xf0c0;</p>
+                </div>
+
+                <div>
+                    <h3 class="perfil" id="organizacao"><a href="#solucoes" id="organizacao" onclick="butOrganizacao">Organização</a></h3>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="round tecnico">
+                    <p class="icon">&#xf085;</p>
+                </div>
+
+                <div>
+                    <h3 class="perfil" id="tecnico"><a href="#solucoes" id="tecnico" onclick="butTecnico">Técnico</a></h3>
+                </div>
+            </div>
+        </section>
+
+    </article>
+
+    <!-- Serviços -->
+
+    <article class="container tam" id="solucoes">
+        <section class="row">
+            <div class="col-md-12" id="solucoes">
+                <h2>Serviços especializados</h2>
+            </div>
+        </section>
+
+        <!-- Linha 1/ Jogadores -->
+            <section class="row">
+
+                <div class="col-md-4">
+                    <div class="caixa caixajogador">
+                        <h4>Consultoria</h4>
+                        <p>Online e individual. Avaliação e indicação de técnicas e protocolos para melhoria de desempenho do jogador e promoção de saúde em eSport.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="caixa caixajogador">
+                        <h4>Treinos</h4>
+                        <p>Presencial. Acompanhamento dos treinos junto à equipe, análise de performance e criação de programação de intervenção. 
+                        Atividades para controle de ansiedade, melhoria do foco, atenção e outras habilidades cognitivas.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="caixa caixajogador">
+                        <h4>Sob Medida</h4>
+                        <p>Presencial ou online. Atendimento para resolução de pontos específicos, como uma melhor adaptação a mudança de time ou cidade.
+                        A duração e o tipo de atendimento são definidos caso a caso.</p>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Linha 2 / Organização -->
+        <section class="row">
+            <div class="col-md-4">
+                <div class="caixa caixaorganizacao">
+                    <h4>Bootcamps</h4>
+                    <p>Presencial. Avaliação dos jogadores e time, acompanhamento dos treinos e da comunicação em jogo para planejamento de intervenção. Workshops para controle de ansiedade, 
+                    melhoria do foco, atenção, coesão grupal e habilidades cognitivas.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa caixaorganizacao">
+                    <h4>Treinos</h4>
+                    <p>Presencial e online. Tem as mesmas características do Bootcamp, contando com encontros mensais ou bimensais, por um período mínimo de três meses. O acompanhamento é feito online.
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa caixaorganizacao">
+                    <h4>Sob Medida</h4>
+                    <p>Presencial ou online. Ajudar a encontrar maneiras de resolver questões pontuais de um dos jogadores ou do time.
+                    A duração e o tipo de atendimento são definidos caso a caso.</p>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Linha 3 / Técnicos -->
+
+        <section class="row">
+            <div class="col-md-4">
+                <div class="caixa caixaorganizacao">
+                    <h4>Seleção</h4>
+                    <p>Presencial ou online. Busca, avaliação e seleção de jogadores e equipe técnica.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="caixa caixatecnico">
+                    <h4>Treinamento de Equipe</h4>
+                    <p>Presencial. Triagem, seleção dentro dos moldes do time e treinamento em equipe para coesão e informação de treinadores. Pode contar com treinadores de primeira divisão.</p>
+                </div>
+            </div>
+
+        </section>
+    </article>
+
+    <!-- Contato  -->
+
+    <article class="container" id="contato">
+        <section class="row">
+            <div class="col-md-12">
+                <!--FORM-->
+
+                <iframe src='contact/contactform.php' frameborder='0' width='1200' height='600'></iframe>
+            </div>
+        </section>
+    </article>
+
+    <!-- Footer  -->
+
+    <div class="footer">
+        <p>Copyright &#169; 2017 Rafael Pereira.<br />Todos os direitos reservados.</p>
+        <a target="_blank" href="http://www.leticiabrand.com">Design</a>
+    </div>
+</body>
+</html>

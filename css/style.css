@@ -1,0 +1,441 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+.b {
+    background-image:url("../img/triangles.png");
+    background-repeat:repeat;
+}
+
+.nav {
+    width:100%;
+    height:30px;
+    background-color:black;
+}
+
+li {
+    display:inline-block;
+    padding-left:5px;
+    padding-right:5px;
+    float:right;
+}
+
+li a{
+    font-family:Calibri, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+    text-decoration:none;
+}
+
+li a:hover{
+    font-family:Calibri, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#10c3fd;
+    text-decoration:none;
+}
+
+
+
+.pos {
+    margin-top:-20px;
+}
+
+.topimage {
+    background-position:top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:750px;
+    background-image:url("../img/main.jpg");
+    text-align:center;
+
+}
+
+    .topimage h1 {
+        color:white;
+        opacity:0.8;
+        font-family:Calibri;
+        font-size:90px;
+        font-weight:bold;
+        padding-top:180px;
+        padding-bottom:120px;
+    }
+
+    .topimage a {
+        font-family:FontAwesome;
+        font-size:70px;
+        color:white;
+        text-decoration:none;
+        opacity:0.6;
+    }
+
+    .topimage a:hover {
+        color:#ffffff;
+        text-decoration:none;
+        opacity:0.8;
+    }
+
+    .topimage a:visited {
+        color:#ffffff;
+        text-decoration:none;
+        opacity:0.6;
+    }
+
+
+.tam{
+    min-height:785px;
+}
+
+
+#perfis h2 {
+     color:#808080;
+     font-family:Calibri;
+     font-size:60px;
+     font-weight:bold;
+     text-align:center;
+     padding-top:30px;
+     padding-bottom:20px;
+}
+
+.round {
+    margin-top:130px;
+    margin-left:70px;
+    width:200px;
+    height:200px;
+    border-radius: 100px;  
+}
+
+.icon {
+    font-family:FontAwesome;
+    font-size:90px;
+    text-align:center;
+    padding-top:35px;
+    color:#ffffff;
+}
+
+    .jogador {
+        background:#83b3ca;
+    }
+
+    .organizacao {
+        background:#af5a5f;
+    }
+
+    .tecnico {
+        background:#835297;
+    }
+
+    .perfil {
+    font-family:Calibri;
+    font-size:40px;
+    font-weight:bold;
+    padding-top:18px;
+    margin-bottom:50px;
+    text-align:center;    
+}
+
+        #jogador{
+            color:#83b3ca;
+            padding-right:10px;
+        }
+
+        #organizacao{
+            color:#af5a5f;
+            padding-right:10px;
+        }
+
+        #tecnico {
+            color: #835297;
+        }
+
+a:hover{
+    text-decoration:none;
+    opacity:0.70;
+}
+
+
+
+
+#solucoes h2 {
+     color:#808080;
+     font-family:Calibri;
+     font-size:60px;
+     font-weight:bold;
+     text-align:center;
+     padding-top:30px;
+     padding-bottom:20px;
+}
+
+a .solucoes{
+   text-decoration:none;
+}
+
+
+
+
+.caixa {
+    display:inline;
+    text-align:center;
+    margin-bottom:20px;
+    min-height:260px;
+}
+
+    .caixa h4 {
+     font-family:Calibri;
+     font-size:30px;
+     font-weight:bold;
+     text-align:center;
+     padding-top:20px;
+     padding-bottom:10px;
+     text-transform:uppercase;
+     letter-spacing:1.5px;
+    }
+
+    .caixa p {
+    font-family:Calibri;
+    color:white;
+    font-size:20px;
+    font-weight:normal;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:20px;
+    }
+
+    .caixajogador {
+        background:#83b3ca;
+        display:block;
+    }
+      
+
+    .caixajogador h4{
+        color:#386c85;
+    }
+
+
+    .caixaorganizacao {
+        background:#af5a5f;
+        display:block;
+    }
+      
+
+    .caixaorganizacao h4{
+        color:#5e1d21;
+    }
+
+    .caixatecnico {
+        background:#835297;
+        display:block;
+    }
+      
+
+    .caixatecnico h4{
+        color:#451b56;
+    }
+
+    .caixadefault {
+        background:#b2b2b2;
+        display:block;
+    }
+
+    .caixadefault h4{
+        color:#4c4c4c;
+    }
+
+
+
+.footer {
+    background-color:black;
+    min-height:100px;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:10px;
+}
+
+    .footer a {
+        font-family:Calibri;
+        font-size:14px;
+        text-decoration:none;
+        color:#808080;
+    }
+
+        .footer a:hover {
+            text-decoration:none;
+            color:#83b3ca;
+        }
+
+    .footer p{
+        font-family:Calibri;
+        font-size:17px;
+        text-decoration:none;
+        color:#bebebe;
+    }
+
+
+    /* FORM */
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/* on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #e2dedb;
+  color: #b3aca7;
+}
+
+header {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  
+  background: transparent;
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: #e2dedb;
+}
+
+#submit {
+  width: 470px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+}}
