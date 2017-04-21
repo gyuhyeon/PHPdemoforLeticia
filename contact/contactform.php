@@ -13,7 +13,8 @@ $formproc = new FGContactForm();
 
 //1. Add your email address here.
 //You can add more than one receipients.
-$formproc->AddRecipient('lee.chan.x3@gmail.com'); //<<---Put your email address here
+//$formproc->AddRecipient('lee.chan.x3@gmail.com'); //<<---Put your email address here
+$formproc->AddRecipient('mark3236@gmail.com'); //<<---Put your email address here
 
 
 //2. For better security. Get a random string from this link: http://tinyurl.com/randstr
