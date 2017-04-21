@@ -62,7 +62,7 @@ if(isset($_POST['submitted']))
 <!-- client-side Form Validations:
 Uses the excellent form validation script from JavaScript-coder.com-->
 
-<script type='text/javascript'>
+<script type='text/javascript' src="scripts/gen_validatorv31.js">
 // <![CDATA[
 
     var frmvalidator  = new Validator("contactus");
