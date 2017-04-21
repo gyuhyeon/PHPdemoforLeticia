@@ -1,0 +1,40 @@
+<html>
+<body>
+
+<form name="contactform" method="post" action="contactform.php" onsubmit="return verifycontents()">
+
+
+  <input  type="text" name="name" placeholder="NAME" maxlength="50" size="30"><br>
+
+  <input  type="text" name="email" placeholder="E-MAIL" maxlength="80" size="30"><br>
+
+  <textarea name="comments" placeholder="MESSAGE" maxlength="1000" cols="25" rows="6"></textarea><br>
+
+  <input type="submit" value="ENVIAR!"><br>
+
+</form>
+
+
+
+<script>
+function verifycontents(){
+  var name=document.getElementsByName('name')[0];
+  var email=document.getElementsByName('email')[0];
+  var comments=document.getElementsByName('comments')[0];
+  if(name.value.length<2){
+    alert("Please input a valid first name");
+    return false;
+  }
+  if(email.value.length<2){
+    alert("Please input a valid email");
+    return false;
+  }
+  if(comments.value.length<2){
+    alert("Please input a valid comment");
+    return false;
+  }
+
+  //if no problems were detected, return true(which is a green light for "onsubmit").
+  return true;
+}
+</script>
