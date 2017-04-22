@@ -20,7 +20,7 @@ if(isset($_POST['email'])) {
     $email_to = "leticia.brand@live.com";
     // This will be the email's subject. You can either make the user set the title of email, or leave it as hardcoded.
     // One benefit of putting it as hardcoded is that your friend will be able to filter out all these automatic emails by title to one inbox.
-    $email_subject = "Automatic Email From Website";
+    $email_subject = "Automatic Email From Website"; //this will be overridden below. Just a placeholder.
     
     // This is for when the submission went wrong. You could just leave it as it is, or modify it, or just not provide any error displays. The problem with having no error displayed is of course, the user won't know if he/she fucked it up.
     // One another elegant way to do this would be to keep the user from making an invalid request in the first place by putting a javascript conditional function at form.html, instead of checking validity in php(server).
@@ -37,7 +37,8 @@ if(isset($_POST['email'])) {
  
     // validation expected data exists
     // if it was an invalid post request (ex : someone using curl or browser address explicitly to hack/screw with the system), just die.
-    if(!isset($_POST['name']) ||
+    if(!isset($_POST['subject'])||
+        !isset($_POST['name']) ||
         !isset($_POST['email']) ||
         !isset($_POST['comments'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
@@ -46,9 +47,11 @@ if(isset($_POST['email'])) {
      
     //this is the part that you put the form values(<input> values) by accessing each as their names.
     // $somethingsomething is obviously a variable. PHP sucks so bad that they need a lot of money to work so their variables always demand a dollar before using them lmao
+    $subject = $_POST['subject'];
     $name = $_POST['name']; 
     $email_from = $_POST['email']; 
     $comments = $_POST['comments']; 
+
 
 
   
@@ -84,6 +87,11 @@ if(isset($_POST['email'])) {
     //This is the part where you craft the email message.
     //note that .= is not the same as = because .= adds the right one to left one whereas = replaces right value to left value.
 
+    $email_subject = "Contato de ".clean_string($subject);
+    if(clean_string($subject)=="orçamento ou outros"){
+        $email_subject = "Contato para ".clean_string($subject);
+    }
+
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
@@ -106,6 +114,7 @@ if(isset($_POST['email'])) {
     'X-Mailer: PHP/' . phpversion();
     @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
+
 <!-- PHP code got interrupted by putting '?>'. Then, it becomes an html document. It's shown to the user. You can even put javascript and such so it doesn't just show some soulless blank page with some sentences. If you need help with it, I'll be glad to help.  -->
  
 

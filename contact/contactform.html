@@ -6,7 +6,12 @@
 
 <form name="contactform" method="post" action="contactform.php" onsubmit="return verifycontents()">
 
-
+  <select name="subject">
+  <option>jogador</option>
+  <option>organização</option>
+  <option>técnico</option>
+  <option>orçamento ou outros</option>
+  </select><br>
   <input  type="text" name="name" placeholder="NAME" maxlength="50" size="30"><br>
 
   <input  type="text" name="email" placeholder="E-MAIL" maxlength="80" size="30"><br>
